@@ -1,0 +1,11 @@
+#!/bin/bash
+
+export ROS_IP="$(hostname -I)"
+export ROS_MASTER_URI=http://"$(hostname -I)":11311
+cd ~/catkin_ws/devel/
+. setup.bash
+
+rosrun p3dx_mover mover0.py
+#rosrun p3dx_mover keyboardRealMover.py
+#cd ~/Desktop 
+

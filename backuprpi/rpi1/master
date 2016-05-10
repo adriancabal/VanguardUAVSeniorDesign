@@ -1,0 +1,6 @@
+#!/bin/bash
+#echo IP
+export ROS_IP="$(hostname -I)"
+export ROS_MASTER_URI=http://"$(hostname -I)":11311
+roscore
+
